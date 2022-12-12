@@ -1,3 +1,76 @@
-/* font-family: 'Inconsolata', monospace;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Space Mono', monospace; */
+/********************  Basic Reset   *********************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+img,
+picture {
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/********************   Custom Properties   ********************/
+
+:root {
+    /*  Colors  */
+    --clr-white: 0 0% 100%;
+    --clr-dark-gray: 0 0% 20%;
+    --clr-light-gray: 0 0% 31%;
+    --clr-attribution: 0 0% 74%;
+
+    /*  Font Family  */
+    --ff-logo: 'Inconsolata', monospace;
+    --ff-content: 'Space Mono', monospace;
+    --ff-montserrat: 'Montserrat', sans-serif;
+
+    /*  Font Weights */
+    --fw-400: 400;
+    --fw-700: 700;
+
+    /*  Font Size   */
+    --fs-300: 1.4rem;
+    --fs-400: 1.8rem;
+    --fs-500: 2.4rem;
+    --fs-900: 4.8rem;
+}
+
+@media (min-width: 45em) {
+    :root {
+        --fs-400: 2.4rem;
+        --fs-900: 6.4rem;
+    }
+}
+/**************************************************************************/
+
+/* **********************   Utility Classes    ************************* */
+
+.container {
+    max-width: 144rem;
+    padding-inline: clamp(2.5rem, 4vw, 7.5rem);
+    margin-inline: auto;
+}
+
+.fs-300 {
+    font-size: var(--fs-300);
+}
+
+.fs-400 {
+    font-size: var(--fs-400);
+}
+
+.fs-500 {
+    font-size: var(--fs-500);
+}
+
+.fs-900 {
+    font-size: var(--fs-900);
+}
