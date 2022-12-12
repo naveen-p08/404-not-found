@@ -104,9 +104,6 @@ html {
 
 main {
     --flow-gap: 7rem;
-}
-
-.hero-img {
     margin-top: clamp(6rem, 16vw, 20rem);
 }
 
@@ -120,7 +117,9 @@ main {
 }
 
 .content p {
-    margin-block: 3rem 6rem;
+    margin-block: 3rem 8rem;
+    line-height: 1.6;
+    width: 27ch;
 }
 
 .back {
@@ -149,4 +148,14 @@ main {
 .attribution a {
     color: hsl(var(--clr-dark-gray));
     text-decoration: underline;
+}
+
+
+/***************    Desktop Layout  **************/
+
+@media (min-width: 45em) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        --flow-gap: 10rem;
+    }
 }
