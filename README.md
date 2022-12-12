@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://root9259.github.io/404-not-found/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/root9259/404-not-found">
       Solution
     </a>
     <span> | </span>
@@ -37,7 +37,7 @@
 
 ![screenshot](404%20not%20found.png)
 
-The live site can be viewed [here]()
+The live site can be viewed [here](https://root9259.github.io/404-not-found/)
 
 ### Built With
 
